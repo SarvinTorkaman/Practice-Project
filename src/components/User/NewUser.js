@@ -38,7 +38,7 @@ const NewUser = (props) => {
   };
 
   const removeErrorHandler=()=>{
-    setError("")
+    setError(null)
 
   }
 
