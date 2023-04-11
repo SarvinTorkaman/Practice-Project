@@ -1,0 +1,13 @@
+.body {
+background-color: rgb(84, 80, 80);
+}
+
+.card {
+width: 500px;
+max-width: 80%;
+margin: 2rem auto;
+padding: 0;
+/* box-shadow: 1px 1px 1px rgba(0, 0, 1, 0.5); */
+border-radius: 10px;
+justify-content: center;
+} 
