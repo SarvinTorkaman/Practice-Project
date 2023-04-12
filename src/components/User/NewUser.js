@@ -11,7 +11,7 @@ const NewUser = (props) => {
   const nameInputChangeHandler = (event) => {
     setName(event.target.value);
   };
-  const ageInputChangeHandlre = (event) => {
+  const ageInputChangeHandler = (event) => {
     setAge(event.target.value);
   };
 
@@ -42,8 +42,10 @@ const NewUser = (props) => {
 
   }
 
+  
+
   return (
-    <div>
+    <React.Fragment>
       {error && < ErrorModal title= {error.title} message={error.message}  onClick={removeErrorHandler}/>}
       <Card className={classes.input}>
         <form className="form-control" onSubmit={submitHandler}>
@@ -63,13 +65,13 @@ const NewUser = (props) => {
               type="number"
               placeholder="Age"
               value={age}
-              onChange={ageInputChangeHandlre}
+              onChange={ageInputChangeHandler}
             />
           </div>
           <Button type="submit" >Add User</Button>
         </form>
       </Card>
-    </div>
+    </React.Fragment>
   );
 };
 
